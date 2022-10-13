@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "module": "esnext",
+    "jsx": "react",
+    "baseUrl": ".",
+    "locale": "zh-CN",
+    "moduleResolution": "node",
+    "strict": true,
+    "noEmit": true,
+    "pretty": true,
+    "allowJs": true,
+    "sourceMap": true,
+    "importHelpers": true,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "lib": ["esnext", "dom"],
+    "types": ["webpack-env", "node", "jest"],
+    "paths": {
+      "@/*": ["app/*"],
+      "~/*": ["*"]
+    }
+  },
+  "include": ["typings", "app"],
+  "exclude": ["node_modules", "build", "dist", "release", "assets"]
+}
